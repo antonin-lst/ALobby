@@ -1,0 +1,74 @@
+#Le nomage est important pour les noms des servers dans (servers et navInventory:contents)
+
+# plugin gratuit
+license: "testLicence"
+
+spawn:
+  forced: true
+  world: "world"
+  x: 0
+  y: 60
+  z: 0
+  pitch: 0
+  yaw: 0
+
+chuteDetection:
+  use: true
+  y: 23
+
+# temps d'actualisation des serveurs en ms
+refreshTime: 5000
+
+servers:
+  faction:
+    description: ""
+    maxPlayer: 150
+  minage:
+    description: ""
+    maxPlayer: 150
+  
+# %onlinePlayer% %maxPlayer%
+serverStatutsInfo:
+  offline: "Indisponible"
+  withelisted: "Whitelist"
+  online: "En ligne"
+  players: "(%onlinePlayer%/%maxPlayer%)"
+  
+# %status%
+showHideMessage:
+  show: "&eVisible"
+  hide: "&eInvisible"
+  message: "&6Les joueurs sont maintenant %status%"
+
+showHidePlayerItem:
+  name: "JSP"
+  item: "EYE_OF_ENDER"
+  lore:
+    - ""
+navItem:
+  name: "Navigation"
+  item: COMPASS
+  lore:
+    - ""
+navInventory:
+  name: "Navigation"
+  rows: 3
+  colones: 9
+# %description% %serverName% %serverStatuts% %players%
+  contents:
+    faction:
+      index: 11
+      item: DIAMOND_SWORD
+      name: "%serverName%"
+      lore:
+        - "%serverStatuts%"
+        - "%players%"
+        - "%description%"
+    minage:
+      index: 15
+      item: DIAMOND_SWORD
+      name: "%serverName%"
+      lore:
+        - "%serverStatuts%"
+        - "%players%"
+        - "%description%"

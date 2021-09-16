@@ -1,0 +1,6 @@
+name: ALobby
+author: azefgh456
+version: 1.0.2
+main: fr.acore.spigot.ALobby
+depend: [ACoreSpigotAPI]
+softdepend: [ALogin]
